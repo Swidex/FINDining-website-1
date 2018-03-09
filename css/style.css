@@ -12,6 +12,7 @@ html,body {
   height: 100vh;
   width: 100vw;
   background-color: white;
+	font-size: 100%;
 }
 
 body {
@@ -99,12 +100,6 @@ tr {
   padding: none;
 }
 
-.title {
-  font-size: 5em;
-  font-family: "Roboto Slab";
-  color: #f44336;
-}
-
 .thumbnail {
   top: 0;
   left: 0;
@@ -136,7 +131,7 @@ a {
   background-image: url("../img/image.jpg");
 	width: 100%;
 	margin: 0 auto;
-  min-height: 50%;
+  min-height: 25%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
