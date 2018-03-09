@@ -59,7 +59,7 @@ body {
 }
 
 .sectionTitle {
-	font-size: 3em;
+	font-size: 3rem;
 	font-family: "Roboto Slab";
 	color: #f44336;
 }
@@ -82,11 +82,11 @@ tr {
 
 .featureTitle {
 	font-family: "Roboto Slab";
-	font-size: 2em;
+	font-size: 2rem;
 }
 
 .sectionDesc {
-	font-size: 1em;
+	font-size: 1rem;
 	font-family: "Roboto";
 	font-weight: 400;
 }
