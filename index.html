@@ -1,233 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <title>FINDining</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="js/scroll.js"></script>
+  <script type="text/javascript" src="js/nav.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/appletouch.png">
+  <link rel="icon" type="image/png" href="img/faviconLarge.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/faviconSmall.png" sizes="16x16">
 
-    <title>FINDining</title>
+</head>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<body>
 
-    <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img class="closebtnimg" src="img/left-arrow.svg"></a>
+    <div class="navLinks">
+      <a onclick="scrollToStart(); closeNav()">Home</a>
+      <a onclick="scrollToAbout(); closeNav()">About</a>
+      <a onclick="scrollToFeat(); closeNav()">Features</a>
+      <a onclick="scrollToDownload(); closeNav()">Download</a>
+    </div>
+  </div>
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+	<div class="" id="blockMain">
 
-    <!-- Custom styles for this template -->
-    <link href="css/new-age.css" rel="stylesheet">
+    <span class="openbtn" onclick="openNav()"><img class="openbtnimg" src="img/right-arrow.svg"></span>
 
-  </head>
+		<div class="titleArea">
 
-  <body id="page-top">
+			<p class="title"><img src="img/fullLogo.svg" height="300px"></p>
+			<div class="startScrollContainer">
+				<a onclick="scrollToAbout()"><img class="startScroll" src="img/down-arrow.svg"></a>
+			</div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="titleImage" src=img/full_logo_transparent.png></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#features">Features</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li> -->
-          </ul>
-        </div>
-      </div>
-    </nav>
+		</div>
 
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-lg-7 my-auto">
-            <div class="header-content mx-auto">
-              <h1 class="mb-5">FINDining is an innovative new app that revolutionizes the restaurant discovery experience.</h1>
-              <a href="#features" class="btn btn-outline btn-xl js-scroll-trigger">Learn More</a>
-            </div>
-          </div>
-          <div class="col-lg-5 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/home_screenshot.png" class="img-fluid" alt="">
-                  </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+	</div>
 
-    <!--     Build an about section here          -->
-    <!-- <section>
-    </section> -->
+	<div class="parallax"></div>
 
-    <section class="features" id="features">
-      <div class="container">
-        <div class="section-heading text-center">
-          <h2>Features</h2>
-          <p class="text-muted">See what the restaurant discovery revolution is all about!</p>
-          <hr>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/restaurant_screenshot.png" class="img-fluid" alt="">
-                  </div>
-                  <div class="button">
-                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8 my-auto">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-screen-smartphone text-primary"></i>
-                    <h3>Any Device</h3>
-                    <p class="text-muted">Use FINDining on your iPhone, Android device, or in the web browser.</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-camera text-primary"></i>
-                    <h3>Discover New Restaurants</h3>
-                    <p class="text-muted">FINDining's advanced algorithm intelligently suggests new restaurants for you!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-present text-primary"></i>
-                    <h3>Free to Use</h3>
-                    <p class="text-muted">FINDining is completely free, and it always will be!</p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-lock-open text-primary"></i>
-                    <h3>Discover Together</h3>
-                    <p class="text-muted">Add your friends in FINDining and find restaurants that everyone will like using our group recommendations feature!</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div id="about">
 
-    <!-- <section class="cta">
-      <div class="cta-content">
-        <div class="container">
-          <h2>Stop waiting.<br>Start building.</h2>
-          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
-        </div>
-      </div>
-      <div class="overlay"></div>
-    </section> -->
+    <p class="sectionTitle">About</p>
+    <p class="sectionDesc">
+      FINDining is a revolutionary new app that solves the problem of not knowing where to eat and not being able to find new, local restaurants.
+      FINDining's advanced restaurant recommendation algorithm uses your eating preferences and tastes in order to give you unique restaurant recommendations.
+      FINDining can also be used socially. Add your friends within the app to see what restaurants they liked and ate at.
+      Get together with a group of friends to create a group within the app and receive restaurant recommendations for the entire group.
+    </p>
 
-    <section class="download bg-primary text-center" id="download">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">Download FINDining!</h2>
-            <p>We're sorry! FINDining is still in development. Be sure to check back soon for more updates!</p>
-            <br>
-            <p>FINDining plans to launch in Omaha in March 2018. We will release an update in April 2018 with the ability to add friends and create groups. FINDining will quickly expand to other cities during the summer of 2018.<p>
-            <!-- <div class="badges">
-              <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-              <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </section>
+  </div>
 
-    <!-- <section class="contact bg-primary" id="contact">
-      <div class="container">
-        <h2>We
-          <i class="fa fa-heart"></i>
-          new friends!</h2>
-        <ul class="list-inline list-social">
-          <li class="list-inline-item social-twitter">
-            <a href="#">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-facebook">
-            <a href="#">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-google-plus">
-            <a href="#">
-              <i class="fa fa-google-plus"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section> -->
+  <div class="parallax"></div>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2018 FINDining. All Rights Reserved.</p>
-        <!-- <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="#">Privacy</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Terms</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">FAQ</a>
-          </li>
-        </ul> -->
-      </div>
-    </footer>
+  <div id="features">
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <p class="sectionTitle">Features</p>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <table id="desktop-table" align="center">
 
-    <!-- Custom scripts for this template -->
-    <script src="js/new-age.js"></script>
+      <tr>
 
-  </body>
+        <th>
+          <img class="featureImg" src="img/discover.svg"><br>
+          <p class="featureTitle">Discover</p><br>
+          <p class="sectionDesc">Find new and local restaurants that align with your tastes and eating preferences.</p>
+        </th>
 
-</html>
+        <th>
+          <img class="featureImg" src="img/friends.svg"><br>
+          <p class="featureTitle">Friends</p><br>
+          <p class="sectionDesc">Add friends within the app and discover which restaurants your friends like.</p>
+        </th>
+
+        <th>
+          <img class="featureImg" src="img/groups.svg"><br>
+          <p class="featureTitle">Groups</p><br>
+          <p class="sectionDesc">Get together with your friends and create groups where you can receive group recommendations based on the tastes of everyone in the group.</p>
+        </th>
+
+      </tr>
+
+    </table>
+
+    <table id="mobile-table" align="center">
+
+      <tr>
+
+        <th>
+          <img class="featureImg" src="img/discover.svg"><br>
+          <p class="featureTitle">Discover</p><br>
+          <p class="sectionDesc">Find new and local restaurants that align with your tastes and eating preferences.</p>
+        </th>
+
+      </tr>
+
+      <tr>
+
+        <th>
+          <img class="featureImg" src="img/friends.svg"><br>
+          <p class="featureTitle">Friends</p><br>
+          <p class="sectionDesc">Add friends within the app and discover which restaurants your friends like.</p>
+        </th>
+
+      </tr>
+      <tr>
+
+        <th>
+          <img class="featureImg" src="img/groups.svg"><br>
+          <p class="featureTitle">Groups</p><br>
+          <p class="sectionDesc">Get together with your friends and create groups where you can receive group recommendations based on the tastes of everyone in the group.</p>
+        </th>
+
+      </tr>
+
+    </table>
+
+  </div>
+
+  <div class="parallax"></div>
+
+  <div id="download">
+
+    <p class="sectionTitle">Download</p>
+    <p class="sectionDesc">
+      The app in currently in a beta-testing phase and will be available on the App Store and the Google Play Store in April.<br>
+      FINDining plans to launch in Omaha in March 2018.
+    </p>
+
+  </div>
+
+</body>

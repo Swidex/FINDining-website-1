@@ -1,0 +1,162 @@
+/*
+Primary Color = #f44336
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
+html,body {
+	position: absolute;
+  padding: 0;
+  margin: auto 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+#blockMain {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+	padding: 0;
+  float: top;
+  margin: 0 auto;
+}
+
+#features {
+	padding-top: 70px;
+	padding-bottom: 100px;
+	background-color: white;
+	text-align: center;
+	width: 100vw;
+}
+
+#about {
+	padding-top: 70px;
+	padding-bottom: 100px;
+	background-color: white;
+	width: 75vw;
+	position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+	text-align: center;
+}
+
+#download {
+	padding-top: 70px;
+	padding-bottom: 100px;
+	background-color: white;
+	width: 75vw;
+	position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+	text-align: center;
+}
+
+.sectionTitle {
+	font-size: 3em;
+	font-family: "Roboto Slab";
+	color: #f44336;
+}
+
+table {
+	width: 75vw;
+	margin: 0 auto;
+	table-layout: fixed;
+}
+
+tr {
+	width: 33%;
+}
+
+.featureImg {
+	width: 120px;
+	height: 120px;
+	padding-bottom: 30px;
+}
+
+.featureTitle {
+	font-family: "Roboto Slab";
+	font-size: 2em;
+}
+
+.sectionDesc {
+	font-size: 1em;
+	font-family: "Roboto";
+	font-weight: 400;
+}
+
+.titleArea {
+  position: absolute;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  padding: none;
+}
+
+.title {
+  font-size: 5em;
+  font-family: "Roboto Slab";
+  color: #f44336;
+}
+
+.thumbnail {
+  top: 0;
+  left: 0;
+	padding-top: 20px;
+	padding-left: 20px;
+  position: absolute;
+}
+
+.startScrollContainer {
+  text-align: center;
+}
+
+a {
+	cursor: pointer;
+}
+
+
+.startScroll {
+	width: 10%;
+	height: 10%;
+	transition: 0.5s;
+}
+
+.startScroll:hover {
+	transform: translateY(20px);
+}
+
+.parallax {
+  background-image: url("../img/image.jpg");
+	width: 100%;
+	margin: 0 auto;
+  min-height: 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	z-index: 0;
+}
+
+#desktop {display: none;}
+#mobile {display: none;}
+#desktop-table {display: none;}
+#mobile-table {display: none;}
+
+/* Desktop Only */
+@media only screen and (min-width: 800px) { /* Make sure to change to min-device-width!!! */
+    #desktop {display: inline;}
+		#desktop-table {display: inline-table;}
+  }
+
+/* Mobile Only */
+@media only screen and (max-width : 800px){ /* Make sure to change to max-device-width!!! */
+      #mobile {display: inline;}
+			#mobile-table {display: inline-table;}
+  }
