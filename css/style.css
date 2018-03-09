@@ -78,7 +78,7 @@ table {
 	table-layout: fixed;
 }
 
-tr {
+featuresTR {
 	width: 33%;
 }
 
@@ -145,6 +145,24 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 	z-index: 0;
+}
+
+.device-container {
+	width: 225px;
+}
+
+.img-fluid {
+	width: 200px;
+}
+
+.leftscreenshot {
+	padding-right: 2em;
+	float: right;
+}
+
+.rightscreenshot {
+	padding-left: 2em;
+	float: left;
 }
 
 #desktop {display: inline;}
