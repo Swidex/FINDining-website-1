@@ -132,7 +132,7 @@ a {
 }
 
 .startScroll:hover {
-	transform: translateY(1em);
+	transform: translateY(.5em);
 }
 
 .parallax {
