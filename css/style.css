@@ -117,8 +117,8 @@ a {
 
 
 .startScroll {
-	width: 3em;
-	height: 3em;
+	width: 2em;
+	height: 2em;
 	transition: 0.5s;
 }
 
@@ -138,27 +138,20 @@ a {
 	z-index: 0;
 }
 
-#desktop {display: none;}
+#desktop {display: inline;}
 #mobile {display: none;}
-#desktop-table {display: none;}
+#desktop-table {display: inline-table;}
 #mobile-table {display: none;}
 
-/* Desktop Only */
-@media only screen and (min-width: 800px) {
-  #desktop {display: inline;}
-	#desktop-table {display: inline-table;}
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px){
+		#mobile {display: inline;}
+		#mobile-table {display: inline-table;}
+		#desktop {display: none;}
+		#desktop-table {display: none;}
 
-	body {
-		font-size: 100%;
-	}
-}
-
-/* Mobile Only */
-@media only screen and (max-width : 800px){
-  #mobile {display: inline;}
-	#mobile-table {display: inline-table;}
-
-	body {
-		font-size: 200%;
-	}
+		body {
+			font-size: 200%;
+		}
 }
