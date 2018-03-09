@@ -16,7 +16,6 @@ html,body {
 
 body {
 	overflow-x: hidden;
-	font-size: 100%;
 }
 
 #blockMain {
@@ -29,16 +28,16 @@ body {
 }
 
 #features {
-	padding-top: 5rem;
-	padding-bottom: 7rem;
+	padding-top: 5em;
+	padding-bottom: 7em;
 	background-color: white;
 	text-align: center;
 	width: 100vw;
 }
 
 #about {
-	padding-top: 5rem;
-	padding-bottom: 7rem;
+	padding-top: 5em;
+	padding-bottom: 7em;
 	background-color: white;
 	width: 75vw;
 	position: relative;
@@ -48,8 +47,8 @@ body {
 }
 
 #download {
-	padding-top: 5rem;
-	padding-bottom: 7rem;
+	padding-top: 5em;
+	padding-bottom: 7em;
 	background-color: white;
 	width: 75vw;
 	position: relative;
@@ -59,7 +58,7 @@ body {
 }
 
 .sectionTitle {
-	font-size: 3rem;
+	font-size: 3em;
 	font-family: "Roboto Slab";
 	color: #f44336;
 }
@@ -75,18 +74,18 @@ tr {
 }
 
 .featureImg {
-	width: 8.5rem;
-	height: 8.5rem;
-	padding-bottom: 2.5rem;
+	width: 8.5em;
+	height: 8.5em;
+	padding-bottom: 2.5em;
 }
 
 .featureTitle {
 	font-family: "Roboto Slab";
-	font-size: 2rem;
+	font-size: 2em;
 }
 
 .sectionDesc {
-	font-size: 1rem;
+	font-size: 1em;
 	font-family: "Roboto";
 	font-weight: 400;
 }
@@ -103,8 +102,8 @@ tr {
 .thumbnail {
   top: 0;
   left: 0;
-	padding-top: 2rem;
-	padding-left: 2rem;
+	padding-top: 2em;
+	padding-left: 2em;
   position: absolute;
 }
 
@@ -118,13 +117,13 @@ a {
 
 
 .startScroll {
-	width: 10%;
-	height: 10%;
+	width: 3em;
+	height: 3em;
 	transition: 0.5s;
 }
 
 .startScroll:hover {
-	transform: translateY(1rem);
+	transform: translateY(1em);
 }
 
 .parallax {
@@ -145,13 +144,21 @@ a {
 #mobile-table {display: none;}
 
 /* Desktop Only */
-@media only screen and (min-width: 800px) { /* Make sure to change to min-device-width!!! */
-    #desktop {display: inline;}
-		#desktop-table {display: inline-table;}
-  }
+@media only screen and (min-width: 800px) {
+  #desktop {display: inline;}
+	#desktop-table {display: inline-table;}
+
+	body {
+		font-size: 100%;
+	}
+}
 
 /* Mobile Only */
-@media only screen and (max-width : 800px){ /* Make sure to change to max-device-width!!! */
-      #mobile {display: inline;}
-			#mobile-table {display: inline-table;}
-  }
+@media only screen and (max-width : 800px){
+  #mobile {display: inline;}
+	#mobile-table {display: inline-table;}
+
+	body {
+		font-size: 200%;
+	}
+}
