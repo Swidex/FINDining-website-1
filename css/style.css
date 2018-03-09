@@ -57,6 +57,15 @@ body {
 	text-align: center;
 }
 
+#footer {
+	background-color: #f44336;
+	color: white;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	width: 100vw;
+	text-align: center;
+}
+
 .sectionTitle {
 	font-size: 3em;
 	font-family: "Roboto Slab";
@@ -127,7 +136,7 @@ a {
 }
 
 .parallax {
-  background-image: url("../img/image.jpg");
+  background-image: url("../img/background.jpg");
 	width: 100%;
 	margin: 0 auto;
   min-height: 25%;
