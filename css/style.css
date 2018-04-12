@@ -92,17 +92,8 @@ featuresTR {
 	font-family: "Roboto Slab";
 	font-size: 2.25em;
 }
-
-
-.privacyLink {
-	font-size: 1.1em;
-}
-.privacyLink:hover {
-	text-decoration: none;
-}
-
 .sectionDesc {
-	color: white;
+	color: black;
 	font-size: 1.25em;
 	font-family: "Roboto";
 	font-weight: 400;
@@ -190,4 +181,15 @@ a {
 		body {
 			font-size: 200%;
 		}
+}
+
+
+.privacyLink {
+	font-size: 1.1em !important;
+}
+.privacyLink:hover {
+	text-decoration: none !important;
+}
+.footerText {
+	color: white;
 }
